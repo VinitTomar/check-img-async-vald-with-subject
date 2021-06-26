@@ -1,0 +1,7 @@
+<input [formControl]="imgFormControl" />
+<p>{{errMsg}}</p>
+<p *ngIf="imgFormControl.pending">checking image existance</p>
+
+{{imgFormControl.status}}
+
+<img src="{{imgFormControl.value}}" alt="" />
